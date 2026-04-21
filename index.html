@@ -3,248 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>King Of Ads</title>
-    <style>
-        /* General Styling */
-        body {
-            background-color: #e6f2ff;
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            color: #333;
-            line-height: 1.6;
-        }
-        h1 {
-            color: #444;
-            margin-top: 30px;
-        }
-        h2 {
-            color: #005580;
-        }
-
-        /* Navbar Styling */
-        nav {
-            background-color: #004466;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: #fff;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        nav a:hover {
-            background-color: #007399;
-        }
-
-        /* Section Styling */
-        section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: left;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-
-        /* Meeting Notes Section */
-        .meeting-notes {
-            padding: 20px;
-            background-color: #f9f9f9;
-            margin: 20px auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-        }
-        .meeting-notes p {
-            font-size: 1rem;
-        }
-        .meeting-notes hr {
-            border: none;
-            border-top: 1px solid #ddd;
-            margin: 20px 0;
-        }
-
-        /* Credits Section */
-        .credits {
-            list-style-type: none;
-            padding: 0;
-            font-size: 1rem;
-            color: #333;
-        }
-        .credits li {
-            margin: 8px 0;
-        }
-
-        /* Art Section Image Styling */
-        .art-images {
-            display: flex;
-            flex-wrap: wrap; 
-            justify-content: center; 
-            gap: 20px; 
-            margin-top: 20px;
-        }
-
-        .art-item {
-            text-align: center;
-            flex: 1;
-            min-width: 280px; 
-            max-width: 45%; 
-            box-sizing: border-box; 
-        }
-
-        .art-item img {
-            max-width: 100%; 
-            height: auto; 
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-
-        .art-item p {
-            margin-top: 10px; 
-            font-size: 0.9em;
-            color: #555;
-        }
-
-        /* Footer Styling */
-        footer {
-            background-color: #004466;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            font-size: 0.9rem;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>Duck Feather Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>King Of Ads</h1>
+<body class="bg-gray-900 text-white font-sans">
 
-    <!-- Navigation bar -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#meeting-notes">Meeting Notes</a>
-        <a href="#prototype">Prototype</a>
-        <a href="#art">Art</a>
-        <a href="#credits">Credits</a>
-    </nav>
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4 shadow-lg">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Duck Feather Studios</h1>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h2>Welcome to King Of Ads</h2>
-        <p>
-            <strong>Game Overview:</strong> King Of Ads is a simulation game where players take on the role of a budding ad executive. You'll balance resources, manage budgets, and make strategic decisions to create the best advertising campaigns. From selecting target audiences to allocating funds, every choice you make will impact your success, reputation, and growth within the competitive ad industry.
-        </p>
-        <p>
-            <strong>Gameplay Mechanics:</strong> Start with a modest budget and a limited resources, gradually increasing your skill, resources and team as you complete contracts successfully. You’ll encounter both high-reward contracts with ethical dilemmas and grassroots startups that offer unique reputational bonuses. Each contract you undertake adds to your company's reputation and opens up even bigger opportunities and understanding your town better.
-        </p>
-    </section>
+      <div class="relative">
+        <button onclick="toggleMenu()" class="bg-gray-700 px-4 py-2 rounded-lg hover:bg-gray-600">
+          Menu
+        </button>
 
-    <!-- Meeting Notes Section -->
-    <section id="meeting-notes">
-        <h2>Meeting Notes</h2>
-        <p><strong>Note:</strong> Sensitive details like full story outlines are kept in the development team’s secure server.</p>
-        <div class="meeting-notes">
-            <p><strong>2025-05-20</strong><br>  
-                - <b>Started to code for interactions and some of the tools used</b><br>
-                - <b>Working on the credits, functions, and tutorial instruction</b><br>
-            </p>
-            <hr />
-            <p><strong>2025-05-15</strong><br>  
-                - <b>Start Programming Prototype </b><br>
-                - <b>Started to delage roles </b><br>
-                - <b>Have our current Title screen created</b><br>
-            </p>
-            <hr />
-            <p><strong>2025-05-13</strong><br> <b>Timeline:</b><br>  
-                - <b>Started to understand basic movement and interactions in GoDot </b><br>
-                - <b>Start Programming Prototype: </b>May 15<br>
-            </p>
-            <hr />
-            <p><strong>2025-05-08</strong><br> <b>Timeline:</b><br>  
-                - <b>Finalize Floor Plans for protoype </b><br>
-                - <b>Start Programming Prototype </b><br>
-                - <b>Rewrite the main and prototype plans  </b>  <br>
-            </p>
-            <hr />
-            <p><strong>2025-01-02</strong><br> <b>Timeline:</b><br>  
-                - <b>Finalize Floor Plans: </b>By Next Meeting<br>
-                - <b>Start Programming Prototype: </b>January 23<br>
-            </p>
-            <hr />
-            <p><strong>2024-11-8</strong><br> <b>Shippy Ads:</b><br>
-                - <b>Floor Plans:</b> Roof, Main floor<br>
-                - <b>UI Design:</b> Pixal, 1990s-2000s, old technology<br>
-                - <b>Art Team Created</b>
-            </p>
-            <hr />
-            <p><strong>2024-11-1</strong><br>
-                - <b>Mascot Ideas:</b> Character designs, Personality<br>
-                - <b>Requirements:</b> Different requirements, how to complete the requirement, special requirements<br>
-                - <b>Prototype Comapny:</b>Wacdonald's 
-            </p>
-            <hr />
-            <p><strong>2024-10-17</strong><br> <b>Prototype Design:</b><br>
-                - <b>Platform:</b> Windows OS only<br>
-                - <b>Opening Sequence:</b> Start in a cozy apartment, where the player receives their first job contract via mail, teleporting to the ad agency headquarters.<br>
-                - <b>Guided Tutorial:</b> Step-by-step instructions on navigating the interface, understanding ad requirements, and managing resources. Interactions with the environment allow exploration beyond ad creation.
-            </p>
-            <hr />
-            <p><strong>2024-10-09</strong><br> Discussion on core ad campaign concepts and gameplay structure.</p>
-            <hr />
-            <p><strong>2024-09-15</strong><br> <b>Technical Stack:</b> GODOT using C# for game logic. The company operates on a contract model, creating ads with increasing challenges as new tools and requirements unlock.<br>
-                <b>End Goals:</b> Multiple endings based on achievements, reputation, and specific requirements met. 
-            </p>
-            <hr />
-            <p><strong>2024-09-06</strong><br> <b>Development Tools:</b> Exploring GODOT and Unity, leaning toward GODOT for streamlined C# integration. Interactive UI elements will guide players through contracts, client negotiations, and ad quality assessments.
-            </p>
+        <div id="dropdown" class="hidden absolute right-0 mt-2 w-48 bg-gray-800 rounded-lg shadow-lg">
+          <a href="#feather-town" class="block px-4 py-2 hover:bg-gray-700">Feather Town</a>
+          <a href="#progress" class="block px-4 py-2 hover:bg-gray-700">Progress</a>
+          <a href="#story" class="block px-4 py-2 hover:bg-gray-700">Story</a>
+          <a href="#art" class="block px-4 py-2 hover:bg-gray-700">Art</a>
+          <a href="#social" class="block px-4 py-2 hover:bg-gray-700">Social Media</a>
+          <a href="#credits" class="block px-4 py-2 hover:bg-gray-700">Credits</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Prototype Section -->
-    <section id="prototype">
-        <h2>Prototype</h2>
-        <p>The prototype is under development, featuring initial gameplay mechanics such as resource allocation, contract management, and character interaction. Updates will include more refined elements and adjustments based on testing feedback.</p>
-        <p><strong>Current Features:</strong></p>
-        <ul>
-            <li>Basic UI for contract selection and resource allocation</li>
-            <li>Animated character interactions and environmental feedback</li>
-            <li>Functional reputation and budget systems</li>
-        </ul>
-    </section>
+  <!-- Hero Section -->
+  <section class="text-center py-20">
+    <img src="logo.png" alt="Duck Feather Studios Logo" class="mx-auto w-32 mb-6">
+    <h2 class="text-4xl font-bold">Welcome to Duck Feather Studios</h2>
+    <p class="mt-4 text-gray-400">Indie Game Development Studio</p>
+  </section>
 
-    <!-- Art Section -->
-    <section id="art">
-        <h2>Art</h2>
-        <p>This section will showcase artwork related to ad campaigns, from character designs to ad templates and brand visuals. Below are a few sneak peeks of our evolving art style:</p>
-        <ul>
-            <li><b>Character Design:</b> Stylized, vibrant characters reflecting ad industry personas</li>
-            <li><b>Environments:</b> Office settings, meeting rooms, and rooftop billboards</li>
-            <li><b>Ad Elements:</b> Iconic symbols, brand assets, and product sketches</li>
-         <p>Current </p>
-        <div class="art-images">
-            <div class="art-item">
-                <img src="King of ads ver 1.png" alt="King of Ads Version 1">
-                <p>King of ads ver 1</p>
-            </div>
-            <div class="art-item">
-                <img src="King of ads ver 2.png" alt="King of Ads Version 2">
-                <p>King of ads ver 2</p>
-            </div>
-        </div>
-    </section>
+  <!-- Sections -->
+  <section id="feather-town" class="py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold mb-4">Feather Town</h2>
+    <p>Details about your game world go here.</p>
+  </section>
 
-    <!-- Credits Section -->
+  <section id="progress" class="py-16 px-6 max-w-4xl mx-auto bg-gray-800 rounded-xl">
+    <h2 class="text-2xl font-bold mb-4">Progress</h2>
+    <p>Development updates and milestones.</p>
+  </section>
+
+  <section id="story" class="py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold mb-4">Story</h2>
+    <p>Game story details.</p>
+  </section>
+
+  <section id="art" class="py-16 px-6 max-w-4xl mx-auto bg-gray-800 rounded-xl">
+    <h2 class="text-2xl font-bold mb-4">Art</h2>
+    <p>Concept art and visuals.</p>
+  </section>
+
+  <section id="social" class="py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold mb-4">Social Media</h2>
+    <p>Links to your platforms.</p>
+  </section>
+
+  <section id="credits" class="py-16 px-6 max-w-4xl mx-auto bg-gray-800 rounded-xl">
+    <h2 class="text-2xl font-bold mb-4">Credits</h2>
+    <p>Team members and contributors.</p>
+  </section>
+
+    <!-- Credits Section 
     <section id="credits">
         <h2>Credits</h2>
         <ul class="credits">
@@ -256,10 +80,10 @@
             <li><strong>Companies Writers:</strong> Loc Thien Vo</li>
         </ul>
     </section>
-
+    -->
     <!-- Footer -->
     <footer>
-        King Of Ads. 2024-2025
+        Duck Feather Studios. 2024-2026
     </footer>
 </body> 
 </html>
