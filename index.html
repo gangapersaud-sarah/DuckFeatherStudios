@@ -14,19 +14,18 @@
       <h1 class="text-xl font-bold">Duck Feather Studios</h1>
 
       <div class="relative">
-        <button id="menuButton">
-          Menu
-        </button>
+          <button id="menuButton" class="bg-[#d4a017] text-black px-4 py-2 rounded-lg hover:bg-[#b8860b]">
+              Menu
+          </button>
 
-        <div id="dropdown" class="hidden absolute right-0 mt-2 w-48 bg-[#08162a] rounded-lg shadow-lg overflow-hidden z-50">
-            <a href="#feather-town" class="block px-4 py-2 hover:bg-[#0b1f3a]">Feather Town</a>
-            <a href="#progress" class="block px-4 py-2 hover:bg-[#0b1f3a]">Progress</a>
-            <a href="#art" class="block px-4 py-2 hover:bg-[#0b1f3a]">Art</a>
-            <a href="#social" class="block px-4 py-2 hover:bg-[#0b1f3a]">Social Media</a>
-            <a href="#credits" class="block px-4 py-2 hover:bg-[#0b1f3a]">Credits</a>
-        </div>
+          <div id="dropdown" class="hidden absolute right-0 mt-2 w-48 bg-[#08162a] rounded-lg shadow-lg overflow-hidden z-50">
+              <a href="#feather-town" class="block px-4 py-2 hover:bg-[#0b1f3a]">Feather Town</a>
+              <a href="#progress" class="block px-4 py-2 hover:bg-[#0b1f3a]">Progress</a>
+              <a href="#art" class="block px-4 py-2 hover:bg-[#0b1f3a]">Art</a>
+              <a href="#social" class="block px-4 py-2 hover:bg-[#0b1f3a]">Social Media</a>
+              <a href="#credits" class="block px-4 py-2 hover:bg-[#0b1f3a]">Credits</a>
+          </div>
       </div>
-    </div>
   </nav>
 
   <!-- Hero Section -->
@@ -73,5 +72,24 @@
     <footer>
         Duck Feather Studios. 2024-2026
     </footer>
+    
+    <script>
+  const button = document.getElementById("menuButton");
+  const dropdown = document.getElementById("dropdown");
+
+  button.addEventListener("click", (e) => {
+    e.stopPropagation();
+    dropdown.classList.toggle("hidden");
+  });
+
+  document.addEventListener("click", () => {
+    dropdown.classList.add("hidden");
+  });
+
+  dropdown.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+</script>
 </body> 
 </html>
+
